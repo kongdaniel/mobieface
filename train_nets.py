@@ -3,7 +3,7 @@
 
 '''
 Tensorflow implementation for MobileFaceNet.
-Author: aiboy.wei@outlook.com .
+Authhor: aiboy.wei@outlook.com .
 '''
 
 from utils.data_process import load_data, next_batch
@@ -40,7 +40,7 @@ def get_parser():
     #parser.add_argument('--eval_datasets', default=['lfw', 'cfp_ff', 'cfp_fp', 'agedb_30'], help='evluation datasets')
     parser.add_argument('--eval_datasets', default=['lfw'], help='evluation datasets')
 
-    parser.add_argument('--eval_db_path', default='./datasets/faces_ms1m_112x112', help='evluate datasets base path')
+    parser.add_argument('--eval_db_path', default='/content/drive/My Drive', help='evluate datasets base path')
     parser.add_argument('--eval_nrof_folds', type=int,
                         help='Number of folds to use for cross validation. Mainly used for testing.', default=10)
     parser.add_argument('--tfrecords_file_path', default='./datasets/tfrecords', type=str,
